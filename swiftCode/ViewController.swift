@@ -20,6 +20,186 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 1. 类型推倒 强类型的语言
+        // option + 鼠标左键 查看类型
+        //        let i  = 10
+        //        let i:Int = 10 => let i  = 10 类型推倒
+        let i  = 10 // option + 鼠标左键
+        
+        let b = 22.44
+        
+        let view = UIView()
+        
+        /*
+         var m :Int
+         m = 10
+         */
+        // 2. 基本运算
+        /*
+         let m  = 10
+         let n = 3.14
+         let result = <#value#>
+         // 整型转为浮点型
+         let tempM = Double(m)
+         let tempN = Int(n)
+         */
+        
+        // 3.逻辑分支
+        // 3.1 if语句
+        // 1. if()小括号可以省掉
+        // 2. 判断句不再有非0即真
+        let a = 10
+        if a>0 {
+            print("a>0")
+        }
+        else
+        {
+            print("a<=0")
+        }
+        //3.2 else if
+        let score = 92
+        if score<0 || score > 100{
+            print("不合理的分数")
+        }
+        else if score<60{
+            print("不及格")
+        }
+        
+        // 3.3 三目运算
+        /*
+         let m = 30
+         let n = 20
+         var result = 0
+         if m>n {
+         result = m
+         }
+         else
+         {
+         result = n
+         }
+         */
+        
+        /*
+         let m = 30
+         let n = 20
+         let result = m > n ? m : n
+         */
+        
+        // 3.4 guard 函数中使用
+        
+        let  age = 20
+        online(age: age) // 调用函数
+        
+        // 3.5 switch
+        // 1.switch 后面的()省略
+        // 2. case后面的break 可以省略
+        //
+        // sex = 0时为男的 sex = 1为女的
+        let sex = 0
+        /*
+         switch sex {
+         case 0:
+         print("男")
+         //  fallthrough // 穿透 可以继续执行下方
+         case 1:
+         print("女")
+         default:
+         print("其他")
+         }
+         */
+        
+        switch sex {
+        case 0,1:
+            print("正常人")
+        default:
+            print("其他")
+        }
+        // 基本用法补充
+        // fallthrough // 穿透 可以继续执行下方
+        // case 后面可以判断多个条件
+        //  3.5.1 switch可以判断浮点型
+        //  3.5.2 switch可以判断字符串
+        
+        let opration = "+"
+        switch opration {
+        case "+":
+            print("是加号")
+        case "-":
+            print("是减号")
+        case "*":
+            print("是乘号")
+        case "/":
+            print("是除以")
+        default:
+            print("其他情况")
+        }
+        //  3.5.3 switch可以判断区间 重点
+        
+        let num = 80
+        // 0..<10  0 - 10 不包括10
+        // 0...10  0 - 10 包括10
+        switch num {
+        case 0..<60:
+            print("不及格")
+        case 60...100:
+            print("及格")
+        default:
+            print("默认成绩")
+        }
+        
+        //4. 循环 for / while / do while
+        // for 后面()可以省略
+        //        for var i = 0; i < 10 ;i += 1 {
+        //            print(i); // swift3已经被移除
+        //        }
+        for i in 0...10 {
+            print(i)
+        }
+        
+        var  num1 = 30
+        
+        // while循环
+        while num>0 {
+            print(num1)
+            num1 -= 1
+        }
+        
+        // do while循环
+        repeat {
+            num1 += 1
+            print(num1)
+        } while num1<10
+        
+        
+        
+    }
+    // 函数
+    func online(age : Int) {
+        //        if age>18 {
+        //            print("可以上网")
+        //        }
+        //        else{
+        //            print("回家吧")
+        //
+        //        }
+        // guard条件为true,执行最后面的语句
+        // guard条件为false,执行else后面的
+        /*
+         guard age >= 18 else {
+         print("回家吧")
+         return
+         }
+         guard 带了身份证 else {
+         print("回家拿身份证")
+         return
+         }
+         guard 带了钱 else {
+         print("回家拿钱")
+         return
+         }
+         */
+        
+        print("可以上网")
      // 添加代码
         // 6.字符串
         // 1.字符串的定义
