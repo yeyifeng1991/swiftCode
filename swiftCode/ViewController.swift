@@ -200,15 +200,48 @@ class ViewController: UIViewController {
         let string = readMessage()
         
         sum(num1: 2, num2: 3)
+        
+        // 11.1 函数的使用注意 注意外部参数和内部参数
+        // 11.2 swift中的默认参数
+        makeCoffee(name: "拿铁")
+        makeCoffee(name: "卡布奇诺")
+        // 11.3 可变参数
+        sumAll(num: 28,28,30)
+        var m = 10
+        var n = 20
+        
+        // 交换
+        swapNum(m: &m, n: &n)
         //12. 类的定义
         //13.类的构造函数
         //14.闭包
         // 15.懒加载
-        
-        
+
 
 }
-   
+   // 给一个默认参数
+    func makeCoffee(name:String = "雀巢") -> String {
+        print("制作\(name)")
+        return "制作\(name)"
+    }
+    
+    // 可变参数
+    func sumAll(num : Int...) -> Int {
+        var result = 0
+        
+        for n in num {
+            result +=  n
+        }
+        return result
+    }
+    
+    func swapNum( m:inout Int ,n :inout Int){
+        let tmp = n
+        m = n
+        m = tmp
+  
+    }
+    
 //没有参数没有返回值
    
 //    func about() -> Void {
@@ -227,7 +260,7 @@ class ViewController: UIViewController {
     }
 // 有参数有返回
     func  sum(num1:Int ,num2:Int) -> Int {
-        return num1+num2;
+        return num1 + num2;
     }
     
     override func didReceiveMemoryWarning() {
