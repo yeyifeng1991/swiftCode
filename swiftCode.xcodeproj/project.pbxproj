@@ -47,6 +47,10 @@
 		D76DA808207A116D00976361 /* swiftCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76DA80C207A116D00976361 /* swiftCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftCodeUITests.swift; sourceTree = "<group>"; };
 		D76DA80E207A116D00976361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BEF658207F04BC00F2AC26 /* 类属性操作.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "类属性操作.playground"; sourceTree = "<group>"; };
+		D7BEF659207F04BC00F2AC26 /* 类的使用.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "类的使用.playground"; sourceTree = "<group>"; };
+		D7BEF65A207F04BC00F2AC26 /* 类的属性监听.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "类的属性监听.playground"; sourceTree = "<group>"; };
+		D7BEF65B207F04BC00F2AC26 /* 类的构造函数.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "类的构造函数.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		D76DA7EB207A116C00976361 /* swiftCode */ = {
 			isa = PBXGroup;
 			children = (
+				D7BEF657207F04BC00F2AC26 /* swiftPG */,
 				D76DA7EC207A116C00976361 /* AppDelegate.swift */,
 				D76DA7EE207A116C00976361 /* ViewController.swift */,
 				D76DA7F0207A116C00976361 /* Main.storyboard */,
@@ -123,6 +128,17 @@
 				D76DA80E207A116D00976361 /* Info.plist */,
 			);
 			path = swiftCodeUITests;
+			sourceTree = "<group>";
+		};
+		D7BEF657207F04BC00F2AC26 /* swiftPG */ = {
+			isa = PBXGroup;
+			children = (
+				D7BEF658207F04BC00F2AC26 /* 类属性操作.playground */,
+				D7BEF659207F04BC00F2AC26 /* 类的使用.playground */,
+				D7BEF65A207F04BC00F2AC26 /* 类的属性监听.playground */,
+				D7BEF65B207F04BC00F2AC26 /* 类的构造函数.playground */,
+			);
+			path = swiftPG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
